@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/new-house-drive/to-do-list#readme",
   "devDependencies": {
+    "css-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "style-loader": "^3.2.1",
     "webpack": "^5.52.0",
     "webpack-cli": "^4.8.0"
   }
