@@ -3,14 +3,45 @@
     src: url('/src/fonts/Funtasia-axYAa.ttf');
 }
 
+#content {
+    background-image: url('/src/img/background-pattern.jpg');
+    width: 100%;
+    height: 80%;
+    min-height: 30em;
+}
+
 .content-title {
     
-    background-image: black;
     font-family: 'Funtasia';
+    font-size: 2em;
+    max-height: 4em;
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
 
-    font-size: 3em;
+    padding-left: 30%;
+    padding-right: 45%;
+    padding-top: 0em;
+    background-image: linear-gradient( rgba(0, 34, 43, 0.432), rgba(14, 255, 243, 0.39));
 
-    padding: 0.2em 40%;
-
-    background-image: linear-gradient(rgb(67, 217, 255),rgb(1, 65, 102));
 }
+
+.content-title:hover {
+    background-image: linear-gradient( rgba(0, 34, 43, 0.829), rgba(14, 255, 243, 0.712));
+}
+
+.title-icon {
+    height: 3em;
+    padding-top: 0.5em;
+}
+
+.title-text h4 {
+    font-size: 1.2em;
+    background: linear-gradient(90deg, #070601, #644001);
+    background-clip: text;
+    -webkit-background-clip: text;  
+    -moz-background-clip: text;  
+    -moz-text-fill-color: transparent;  
+    -webkit-text-fill-color: transparent;
+}
+

@@ -1,5 +1,6 @@
 "use strict";
 import "./css/style.css";
+import titleIconPath from './icons/shield.svg'
 
 const TrueBlueTodo = (() => {
   let content = document.getElementById("content");
@@ -7,7 +8,21 @@ const TrueBlueTodo = (() => {
   const addTopBar = () => {
     let title = document.createElement("div");
     title.className = "content-title";
-    title.innerText = "True Blue Todo";
+
+    let titleText = document.createElement('div')
+    titleText.className = 'title-text'
+    let titleTextP = document.createElement('h4')
+    titleTextP.innerText = "True Blue Todo";
+
+    titleText.appendChild(titleTextP)
+
+    let titleIcon = document.createElement('img');
+    titleIcon.src = titleIconPath;
+    titleIcon.alt = 'My awesome image'
+    titleIcon.className = 'title-icon';
+
+    title.appendChild(titleIcon);
+    title.appendChild(titleText)
 
     content.appendChild(title);
   };
