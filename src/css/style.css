@@ -1,4 +1,16 @@
+@font-face {
+    font-family: Funtasia;
+    src: url('/src/fonts/Funtasia-axYAa.ttf');
+}
+
 .content-title {
-    min-height: 6em;
+    
     background-image: black;
+    font-family: 'Funtasia';
+
+    font-size: 3em;
+
+    padding: 0.2em 40%;
+
+    background-image: linear-gradient(rgb(67, 217, 255),rgb(1, 65, 102));
 }
