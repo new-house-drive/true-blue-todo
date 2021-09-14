@@ -10,7 +10,7 @@
     min-height: 30em;
 }
 
-.content-title {
+.top-bar-container {
     
     font-family: 'Funtasia';
     font-size: 2em;
@@ -26,16 +26,16 @@
 
 }
 
-.content-title:hover {
+.top-bar-container:hover {
     background-image: linear-gradient( rgba(0, 34, 43, 0.829), rgba(14, 255, 243, 0.712));
 }
 
-.title-icon {
+.top-bar-icon {
     height: 3em;
     padding-top: 0.5em;
 }
 
-.title-text h4 {
+.top-bar-text-container h4 {
     font-size: 1.2em;
     background: linear-gradient(90deg, #070601, #644001);
     background-clip: text;

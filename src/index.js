@@ -5,26 +5,43 @@ import titleIconPath from './icons/shield.svg'
 const TrueBlueTodo = (() => {
   let content = document.getElementById("content");
 
+  // Top Bar contains Logo, Navbat and Title
   const addTopBar = () => {
-    let title = document.createElement("div");
-    title.className = "content-title";
+    let topBarContainer = document.createElement("div");
+    topBarContainer.className = "top-bar-container";
 
-    let titleText = document.createElement('div')
-    titleText.className = 'title-text'
-    let titleTextP = document.createElement('h4')
-    titleTextP.innerText = "True Blue Todo";
+    /* Text Container */
+    let topBarTextContainer = document.createElement('div')
+    topBarTextContainer.className = 'top-bar-text'
+    let topBarText = document.createElement('h4')
+    topBarText.innerText = "True Blue Todo";
 
-    titleText.appendChild(titleTextP)
+    topBarTextContainer.appendChild(topBarText)
 
-    let titleIcon = document.createElement('img');
-    titleIcon.src = titleIconPath;
-    titleIcon.alt = 'My awesome image'
-    titleIcon.className = 'title-icon';
+    /* Top bar icon */
+    let topBarIcon = document.createElement('img');
+    topBarIcon.src = titleIconPath;
+    topBarIcon.alt = 'My awesome image'
+    topBarIcon.className = 'top-bar-icon';
 
-    title.appendChild(titleIcon);
-    title.appendChild(titleText)
+    /* Navbar */
+    let navbar = document.createElement('div');
+    navbar.className = 'navbar-container';
 
-    content.appendChild(title);
+    for(let i = 0; i < 3; i++) {
+      let navbarButton = document.createElement('button')
+      navbarButton.className = 'navbar-button'
+      navbarButton.innerText = 'Example button'
+      navbar.appendChild(navbarButton)
+    }
+
+
+    /** Append Elements */
+    topBarContainer.appendChild(topBarIcon);
+    topBarContainer.appendChild(topBarTextContainer)
+    topBarContainer.appendChild(navbar);
+
+    content.appendChild(topBarContainer);
   };
 
   /* TODO */
