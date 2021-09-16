@@ -1,3 +1,27 @@
+/* Summary 
+    1. fonts
+        Funtasia
+        Aileron Regular (?)
+
+    2. top bar
+        .top-bar-container
+        .top-bar-icon
+        .top-bar-text-container h4
+
+        navigation bar
+
+        .navbar-container
+        .navbar-button
+        .navbar-button:hover
+        .navbar-button:active
+*/
+
+
+
+
+
+/* Fonts */
+
 @font-face {
     font-family: Funtasia;
     src: url('/src/fonts/Funtasia-axYAa.ttf');
