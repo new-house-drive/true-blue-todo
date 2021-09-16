@@ -38,6 +38,7 @@ const TrueBlueTodo = (() => {
     return topBarIcon;
   };
 
+  // Add dropdown menu depending on views.
   const createTopBarNavbar = () => {
     /* Navbar */
     let navbar = document.createElement("div");
@@ -52,15 +53,25 @@ const TrueBlueTodo = (() => {
 
     return navbar;
   };
-  // Add todos from the list of todos and update them
+  
 
-  /* TODO */
-  /** Background for empty list */
+
+  // Add dashboard container for views
+
+  // Make separate views
+
+  // Integrate views navigation into the navbar
+
+  /** Add background for empty list */
   // "Cattle die, kinsmen die; the self must also die. I know one thing which never dies: the reputation of each dead man"
   let poeticEddaQuote =
     "Deyr fé,\ndeyja frændr,\ndeyr sjalfr it sama,\nek veit einn,\nat aldrei deyr:\ndómr um dauðan hvern.";
 
-  return {
+  /*  */
+
+
+
+    return {
     addTopBar,
   };
 })();
