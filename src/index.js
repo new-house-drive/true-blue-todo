@@ -54,6 +54,27 @@ const TrueBlueTodo = (() => {
     return navbar;
   };
   
+  // Dashboard Container
+  const addInitialDashboard = () => {
+    let dashboardContainer = document.createElement('div');
+    dashboardContainer.className = 'dashboard-container';
+    
+    dashboardContainer.appendChild(addInitialView())
+
+    content.appendChild(dashboardContainer);
+  }
+
+  const addInitialView = () => {
+    let view = document.createElement('div');
+    view.className = 'view-container';
+
+    ///// TEST
+    view.innerText = 'hello i a test'
+
+    return view;
+
+  }
+
 
 
   // Add dashboard container for views
@@ -73,9 +94,11 @@ const TrueBlueTodo = (() => {
 
     return {
     addTopBar,
+    addInitialDashboard
   };
 })();
 
 const Module = (() => {
   TrueBlueTodo.addTopBar();
+  TrueBlueTodo.addInitialDashboard();
 })();

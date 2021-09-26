@@ -107,3 +107,16 @@
     background: linear-gradient(180deg, rgba(211,230,36,0.39677869438791147) 0%, rgba(29,222,170,0.36876748990611874) 100%);
     color: whitesmoke;
 }
+
+/* dashboard */
+.dashboard-container {
+    padding: 0.3em;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.view-container {
+    width: 100%;
+    min-height: 10em;
+    background-color: rgba(250, 235, 215, 0.486);
+}
