@@ -69,15 +69,22 @@ const TrueBlueTodo = (() => {
     view.className = 'view-container';
 
     
-    view.appendChild(createTodo());
+    view.appendChild(createEmptyTodo());
 
     return view;
 
   }
 
-  const createTodo = () => {
+  const createEmptyTodo = () => {
     let todo = document.createElement('div');
     todo.className = 'todo-container';
+    
+    let emptyTaskContainer = document.createElement('div');
+    emptyTaskContainer.className = "todo-empty-task-container";
+
+    todo.appendChild(emptyTaskContainer)
+
+    emptyTaskContainer.innerText = 'gjgj j jgngj jnj cjenv ievnirn i i ifn i i i iierin njrnvrv r hgn   jfnvurnvn unurn '
 
     let addTaskButton = document.createElement('button')
     addTaskButton.className = 'todo-add-task-button';
@@ -88,6 +95,7 @@ const TrueBlueTodo = (() => {
 
     return todo;
   }
+
 
 
 
